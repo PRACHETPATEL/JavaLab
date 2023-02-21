@@ -20,7 +20,7 @@ class Praticalone{
     }
     static void fibonacci(int n){
         int a=0,b=1;
-        System.out.print("Fibonacci series:");
+        System.out.print("Fibonacci series: ");
         if(n==0){
             return;
         }
