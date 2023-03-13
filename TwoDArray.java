@@ -23,7 +23,7 @@ public class TwoDArray{
         y.displayMatrix(y.transpose());
         System.out.println("Multiplication of transpose of Matrix 2 and Matrix 3");
         x.displayMatrix(y.multi(z.transpose()));
-        System.out.println("Maximum number in Matrix 2:"+y.maximum_of_array());
+        System.out.println("Maximum number in Matrix 2  :"+y.maximum_of_array());
         System.out.println("Average of Matrix 1 elements:"+x.average_of_array());
     }
 }

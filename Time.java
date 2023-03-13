@@ -29,8 +29,9 @@ public class Time {
         if((X.hour+Y.hour+h)>12){
             h+=X.hour+Y.hour-12;
         }
-        else
-        h+=X.minute+Y.minute;
+        else{
+            h+=X.minute+Y.minute;
+        }
         System.out.println("Time sum: "+h+" Hours "+m+" Minutes "+s+" Seconds");
     }
 }

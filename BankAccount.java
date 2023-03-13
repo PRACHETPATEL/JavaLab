@@ -72,9 +72,9 @@ class BankAccount{
     public void createAcc(){
         Scanner input=new Scanner(System.in);
         Acc_no++;
-        System.out.println("Enter your name:");
+        System.out.print("Enter your name   : ");
         this.Depositorname=input.nextLine();
-        System.out.println("Enter Account Type:");
+        System.out.print("Enter Account Type: ");
         this.Acc_type=input.next();
         this.Balance=0;
         System.out.println("Your Generated Account number is:"+Acc_no);
