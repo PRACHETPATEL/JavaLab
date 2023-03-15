@@ -51,12 +51,15 @@ class Employee{
     void displaydetails(){
         this.dearnessallowance=((float)0.74*(float)(this.basicsalary));
         float grossSalary=this.basicsalary+this.dearnessallowance;
+        float netsalary,TDS;
+        TDS=((float)(0.10)*grossSalary);
+        netsalary=grossSalary-TDS;
         System.out.println("Your Name is                     : "+this.Name);
         System.out.println("Your Annual Salary               : "+this.basicsalary);
         System.out.println("Calculated Dearness Allowance is : "+this.dearnessallowance);
         if(grossSalary>100000){
-        System.out.println("TDS charged is                   : "+((float)(0.10)*grossSalary));
-        System.out.println("Your Net Salary is               : "+grossSalary);
+        System.out.println("TDS charged is                   : "+TDS);
+        System.out.println("Your Net Salary is               : "+netsalary);
         }
         else{
         System.out.println("TDS charged is                   : NIL");
