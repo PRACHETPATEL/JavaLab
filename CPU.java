@@ -46,6 +46,6 @@ class CPU{
         }
     }
     public static void main(String[] args) {
-        CPU dell=new CPU(23999);
+        CPU dell=new CPU(30999.99);
     }
 }
