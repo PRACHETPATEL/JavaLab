@@ -5,6 +5,11 @@ class EnteredZero extends Exception{
         super(arg);
     }
 }
+class NegativeNumber extends Exception{
+    NegativeNumber(String arg){
+        super(arg);
+    }
+}
 public class Calculation {
     public static int n=0,avg=0,count=0;
     public static void main(String[] args) {
@@ -24,16 +29,21 @@ public class Calculation {
         System.out.println("Enter "+n+" Values:");
         for (int i=0;i<n;i++){
             try {
-                int temp =in.nextInt();
-                if (temp < 0) {
-                    throw new InputMismatchException("Entered value is Negative");
+                String temp =in.next();
+                Integer input=Integer.parseInt(temp);
+                if (input< 0) {
+                    throw new NegativeNumber("Entered value is Negative");
                 }
                 else {
-                    array[i]=temp;
+                    array[i]=input;
                     avg+=array[i];
                 }
             }
-            catch (InputMismatchException e){
+            catch (NegativeNumber e){
+                System.out.println(e);
+                count++;
+            }
+            catch(NumberFormatException e){
                 System.out.println(e);
                 count++;
             }
